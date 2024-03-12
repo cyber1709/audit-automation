@@ -1,5 +1,5 @@
 Date: Tue 03/12/2024 
-Time: 14:10:33.73 
+Time: 14:18:11.00 
 Number of all users: 2 
 Logged in user: sam 
 Hostname: DESKTOP-8PN2JMN 
@@ -11,4 +11,6 @@ Internet is connected.
 User privilege: Administrator 
 Guest account is enabled. 
 Remote Desktop is enabled. 
+Unable to determine Autoplay status. 
+Windows Firewall is enabled. 
 Antivirus software is present. 

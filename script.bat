@@ -123,6 +123,33 @@ if %errorlevel% equ 0 (
     echo Unable to determine Remote Desktop status. >> output.txt
 )
 
+REM Check if autoplay is enabled
+reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoDriveTypeAutoRun > nul 2>&1
+if %errorlevel% equ 0 (
+    reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoDriveTypeAutoRun | findstr "0x0" > nul 2>&1
+    if %errorlevel% equ 0 (
+        echo Autoplay is enabled. >> output.txt
+    ) else (
+        echo Autoplay is not enabled. >> output.txt
+    )
+) else (
+    echo Unable to determine Autoplay status. >> output.txt
+)
+
+
+REM Check if Windows Firewall is enabled
+reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v EnableFirewall > nul 2>&1
+if %errorlevel% equ 0 (
+    reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v EnableFirewall | findstr "REG_DWORD.*0x1" > nul 2>&1
+    if %errorlevel% equ 0 (
+        echo Windows Firewall is enabled. >> output.txt
+    ) else (
+        echo Windows Firewall is disabled. >> output.txt
+    )
+) else (
+    echo Unable to determine Windows Firewall status. >> output.txt
+)
+
 REM Check for installed antivirus software and display its name
 echo Checking for antivirus software...
 wmic /namespace:\\root\SecurityCenter2 path antivirusproduct get /value | findstr /i /c:"displayName" > nul 2>&1
