@@ -1,6 +1,9 @@
-Tue_03/12/2024_13:01:33.78 
+Tue_03/12/2024_13:12:18.31 
 Number of all users: 2 
 Logged in user: sam 
+Hostname: DESKTOP-8PN2JMN 
+Operating System: Microsoft Windows 11 Pro 
+OS Install Date: 2024-01-11 16:22:51 
 Password complexity: Not enforced. 
 Screen saver is enabled. 
 Internet is connected. 

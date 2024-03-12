@@ -17,6 +17,28 @@ echo Number of all users: %num_users% >> output.txt
 REM Get name of logged in user
 echo Logged in user: %USERNAME% >> output.txt
 
+REM Get full username
+for /f "tokens=2 delims==\ " %%U in ('wmic useraccount where name="%USERNAME%" get fullname /value ^| find "="') do (
+    echo Full username: %%U >> output.txt
+)
+
+REM Get hostname of the computer
+echo Hostname: %COMPUTERNAME% >> output.txt
+
+REM Get OS name
+for /f "tokens=2 delims==" %%O in ('wmic os get Caption /value ^| find "="') do (
+    echo Operating System: %%O >> output.txt
+)
+
+REM Get OS install date
+for /f "tokens=2 delims==" %%I in ('wmic os get InstallDate /value ^| find "="') do (
+    set "InstallDate=%%I"
+)
+
+REM Convert install date to a more readable format (YYYYMMDD)
+set "InstallDate=%InstallDate:~0,4%-%InstallDate:~4,2%-%InstallDate:~6,2% %InstallDate:~8,2%:%InstallDate:~10,2%:%InstallDate:~12,2%"
+echo OS Install Date: %InstallDate% >> output.txt
+
 REM Check if we have administrative privileges
 >nul 2>&1 net session
 if %errorlevel% neq 0 (
