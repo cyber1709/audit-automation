@@ -1,7 +1,8 @@
-Tue_03/12/2024_12:35:40.58 
+Tue_03/12/2024_13:01:33.78 
 Number of all users: 2 
 Logged in user: sam 
 Password complexity: Not enforced. 
 Screen saver is enabled. 
 Internet is connected. 
 User privilege: Administrator 
+Antivirus software is present. 

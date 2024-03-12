@@ -74,3 +74,23 @@ if %errorlevel% equ 0 (
 )
 
 echo User privileges checked and saved to output.txt.
+
+
+
+
+
+REM Check for installed antivirus software and display its name
+echo Checking for antivirus software...
+wmic /namespace:\\root\SecurityCenter2 path antivirusproduct get /value | findstr /i /c:"displayName" > nul 2>&1
+if %errorlevel% equ 0 (
+    echo Antivirus software is present. >> output.txt
+) else (
+    echo Antivirus software is not present. >> output.txt
+)
+
+wmic /namespace:\\root\SecurityCenter2 path antivirusproduct get displayName /value | findstr /i "displayName" > nul 2>&1
+if %errorlevel% equ 0 (
+    for /f "tokens=2 delims==" %%a in ('wmic /namespace:\\root\SecurityCenter2 path antivirusproduct get displayName /value ^| findstr /i "displayName"') do (
+        echo Antivirus software present: %%a >> anitivirus_present.txt
+    )
+)
