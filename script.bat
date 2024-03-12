@@ -150,6 +150,8 @@ if %errorlevel% equ 0 (
     echo Unable to determine Windows Firewall status. >> output.txt
 )
 
+
+
 REM Check for installed antivirus software and display its name
 echo Checking for antivirus software...
 wmic /namespace:\\root\SecurityCenter2 path antivirusproduct get /value | findstr /i /c:"displayName" > nul 2>&1
@@ -165,3 +167,26 @@ if %errorlevel% equ 0 (
         echo Antivirus software present: %%a >> anitivirus_present.txt
     )
 )
+
+REM Check if Automatic Updates are enabled
+reg query "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoUpdate > nul 2>&1
+if %errorlevel% equ 0 (
+    reg query "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoUpdate | findstr "0x0" > nul 2>&1
+    if %errorlevel% equ 0 (
+        echo Automatic Updates are enabled. >> output.txt
+    ) else (
+        echo Automatic Updates are not enabled. >> output.txt
+    )
+) else (
+    echo Unable to determine Automatic Updates status. >> output.txt
+)
+
+
+REM Check for USB devices ever connected
+echo Checking for USB devices...
+reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB" /s > usb_devices.txt
+
+
+REM Get list of all third-party apps installed in the system
+echo Getting list of third-party apps...
+reg query "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall" /s | findstr "DisplayName" | findstr /v "Microsoft" > third_party_apps.txt

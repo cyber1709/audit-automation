@@ -1,0 +1,215 @@
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30\4&92b3c53&0&0
+    Capabilities    REG_DWORD    0x80
+    Address    REG_DWORD    0x0
+    ContainerID    REG_SZ    {00000000-0000-0000-ffff-ffffffffffff}
+    HardwareID    REG_MULTI_SZ    USB\ROOT_HUB30&VID8086&PIDA2AF&REV0000\0USB\ROOT_HUB30&VID8086&PIDA2AF\0USB\ROOT_HUB30
+    CompatibleIDs    REG_MULTI_SZ    
+    ClassGUID    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}
+    ParentIdPrefix    REG_SZ    5&2108ad5d&0
+    Service    REG_SZ    USBHUB3
+    DeviceDesc    REG_SZ    @usbhub3.inf,%usbhub3.roothubdevicedesc%;USB Root Hub (USB 3.0)
+    Driver    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}\0001
+    Mfg    REG_SZ    @usbhub3.inf,%generic.mfg%;(Standard USB HUBs)
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30\4&92b3c53&0&0\Device Parameters
+    HardResetCount    REG_DWORD    0x0
+    LastHubResetPortStatus    REG_DWORD    0x0
+    OvercurrentDetected    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30\4&92b3c53&0&0\Device Parameters\uxd
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30\4&92b3c53&0&0\Device Parameters\WDF
+    IdleInWorkingState    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\ROOT_HUB30\4&92b3c53&0&0\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887\K06M7JA1513_________
+    DeviceDesc    REG_SZ    @usbstor.inf,%genericbulkonly.devicedesc%;USB Mass Storage Device
+    LocationInformation    REG_SZ    Port_#0004.Hub_#0001
+    Capabilities    REG_DWORD    0x94
+    Address    REG_DWORD    0x4
+    ContainerID    REG_SZ    {68e9e4b8-fccf-5d96-8d2b-1260cf196308}
+    HardwareID    REG_MULTI_SZ    USB\VID_0E8D&PID_1887&REV_0000\0USB\VID_0E8D&PID_1887
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_0E8D&Class_08&SubClass_06&Prot_50\0USB\COMPAT_VID_0E8D&Class_08&SubClass_06\0USB\COMPAT_VID_0E8D&Class_08\0USB\Class_08&SubClass_06&Prot_50\0USB\Class_08&SubClass_06\0USB\Class_08
+    ClassGUID    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}
+    Service    REG_SZ    USBSTOR
+    Driver    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}\0003
+    Mfg    REG_SZ    @usbstor.inf,%generic.mfg%;Compatible USB storage device
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887\K06M7JA1513_________\Device Parameters
+    EnableSelectiveSuspend    REG_DWORD    0x0
+    EnumerationRetryCount    REG_DWORD    0x0
+    SymbolicName    REG_SZ    \??\USB#VID_0E8D&PID_1887#K06M7JA1513_________#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887\K06M7JA1513_________\Device Parameters\Ceip
+    DeviceInformation    REG_DWORD    0x0
+    PortInterconnectType    REG_DWORD    0x0
+    TroubleshooterRootCauseId    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887\K06M7JA1513_________\Device Parameters\e5b3b5ac-9725-4f78-963f-03dfb1d828c7
+    D3ColdSupported    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_0E8D&PID_1887\K06M7JA1513_________\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002\5&2108ad5d&0&6
+    DeviceDesc    REG_SZ    @usb.inf,%usb\composite.devicedesc%;USB Composite Device
+    LocationInformation    REG_SZ    Port_#0006.Hub_#0001
+    Capabilities    REG_DWORD    0x84
+    Address    REG_DWORD    0x6
+    ContainerID    REG_SZ    {96a5392f-b06e-11ee-aaca-806e6f6e6963}
+    HardwareID    REG_MULTI_SZ    USB\VID_1C4F&PID_0002&REV_0330\0USB\VID_1C4F&PID_0002
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_1C4F&DevClass_00&SubClass_00&Prot00\0USB\COMPAT_VID_1C4F&DevClass_00&SubClass_00\0USB\COMPAT_VID_1C4F&DevClass_00\0USB\DevClass_00&SubClass_00&Prot_00\0USB\DevClass_00&SubClass_00\0USB\DevClass_00\0USB\COMPOSITE
+    ClassGUID    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}
+    ParentIdPrefix    REG_SZ    6&29c7ee58&0
+    Service    REG_SZ    usbccgp
+    Driver    REG_SZ    {36fc9e60-c465-11cf-8056-444553540000}\0002
+    Mfg    REG_SZ    @usb.inf,%generic.mfg%;(Standard USB Host Controller)
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002\5&2108ad5d&0&6\Device Parameters
+    DeviceSelectiveSuspended    REG_DWORD    0x1
+    EnumerationRetryCount    REG_DWORD    0x0
+    SymbolicName    REG_SZ    \??\USB#VID_1C4F&PID_0002#5&2108ad5d&0&6#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002\5&2108ad5d&0&6\Device Parameters\Ceip
+    DeviceInformation    REG_DWORD    0x8
+    PortInterconnectType    REG_DWORD    0x0
+    TroubleshooterRootCauseId    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002\5&2108ad5d&0&6\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_00
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_00\6&29c7ee58&0&0000
+    DeviceDesc    REG_SZ    @input.inf,%hid.devicedesc%;USB Input Device
+    LocationInformation    REG_SZ    0000.0014.0000.006.000.000.000.000.000
+    Capabilities    REG_DWORD    0x80
+    Address    REG_DWORD    0x6
+    ContainerID    REG_SZ    {96a5392f-b06e-11ee-aaca-806e6f6e6963}
+    HardwareID    REG_MULTI_SZ    USB\VID_1C4F&PID_0002&REV_0330&MI_00\0USB\VID_1C4F&PID_0002&MI_00
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_1c4f&Class_03&SubClass_01&Prot_01\0USB\COMPAT_VID_1c4f&Class_03&SubClass_01\0USB\COMPAT_VID_1c4f&Class_03\0USB\Class_03&SubClass_01&Prot_01\0USB\Class_03&SubClass_01\0USB\Class_03
+    ClassGUID    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    ParentIdPrefix    REG_SZ    7&2ae29e79&0
+    Service    REG_SZ    HidUsb
+    Driver    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0001
+    Mfg    REG_SZ    @input.inf,%stdmfg%;(Standard system devices)
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_00\6&29c7ee58&0&0000\Device Parameters
+    AllowIdleIrpInD3    REG_DWORD    0x1
+    DeviceResetNotificationEnabled    REG_DWORD    0x1
+    DeviceSelectiveSuspended    REG_DWORD    0x1
+    EnhancedPowerManagementEnabled    REG_DWORD    0x1
+    LegacyTouchScaling    REG_DWORD    0x0
+    RevisionId    REG_DWORD    0x330
+    SelectiveSuspendEnabled    REG_BINARY    00
+    VendorRevision    REG_DWORD    0x0
+    WriteReportExSupported    REG_DWORD    0x1
+    ExtPropDescSemaphore    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_00\6&29c7ee58&0&0000\Device Parameters\e5b3b5ac-9725-4f78-963f-03dfb1d828c7
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_00\6&29c7ee58&0&0000\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_01
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_01\6&29c7ee58&0&0001
+    DeviceDesc    REG_SZ    @input.inf,%hid.devicedesc%;USB Input Device
+    LocationInformation    REG_SZ    0000.0014.0000.006.000.000.000.000.000
+    Capabilities    REG_DWORD    0x80
+    Address    REG_DWORD    0x7
+    ContainerID    REG_SZ    {96a5392f-b06e-11ee-aaca-806e6f6e6963}
+    HardwareID    REG_MULTI_SZ    USB\VID_1C4F&PID_0002&REV_0330&MI_01\0USB\VID_1C4F&PID_0002&MI_01
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_1c4f&Class_03&SubClass_00&Prot_00\0USB\COMPAT_VID_1c4f&Class_03&SubClass_00\0USB\COMPAT_VID_1c4f&Class_03\0USB\Class_03&SubClass_00&Prot_00\0USB\Class_03&SubClass_00\0USB\Class_03
+    ClassGUID    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    ParentIdPrefix    REG_SZ    7&131f1234&0
+    Service    REG_SZ    HidUsb
+    Driver    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0002
+    Mfg    REG_SZ    @input.inf,%stdmfg%;(Standard system devices)
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_01\6&29c7ee58&0&0001\Device Parameters
+    AllowIdleIrpInD3    REG_DWORD    0x1
+    DeviceResetNotificationEnabled    REG_DWORD    0x1
+    DeviceSelectiveSuspended    REG_DWORD    0x1
+    EnhancedPowerManagementEnabled    REG_DWORD    0x1
+    LegacyTouchScaling    REG_DWORD    0x0
+    RevisionId    REG_DWORD    0x330
+    SelectiveSuspendEnabled    REG_BINARY    00
+    VendorRevision    REG_DWORD    0x0
+    WriteReportExSupported    REG_DWORD    0x1
+    ExtPropDescSemaphore    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_01\6&29c7ee58&0&0001\Device Parameters\e5b3b5ac-9725-4f78-963f-03dfb1d828c7
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_1C4F&PID_0002&MI_01\6&29c7ee58&0&0001\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&3
+    DeviceDesc    REG_SZ    @input.inf,%hid.devicedesc%;USB Input Device
+    LocationInformation    REG_SZ    Port_#0003.Hub_#0001
+    Capabilities    REG_DWORD    0x84
+    Address    REG_DWORD    0x3
+    ContainerID    REG_SZ    {96a5392a-b06e-11ee-aaca-806e6f6e6963}
+    HardwareID    REG_MULTI_SZ    USB\VID_30FA&PID_0300&REV_0100\0USB\VID_30FA&PID_0300
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_30FA&Class_03&SubClass_01&Prot_02\0USB\COMPAT_VID_30FA&Class_03&SubClass_01\0USB\COMPAT_VID_30FA&Class_03\0USB\Class_03&SubClass_01&Prot_02\0USB\Class_03&SubClass_01\0USB\Class_03
+    ClassGUID    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    ParentIdPrefix    REG_SZ    6&3af64f7a&0
+    Service    REG_SZ    HidUsb
+    Driver    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0000
+    Mfg    REG_SZ    @input.inf,%stdmfg%;(Standard system devices)
+    ConfigFlags    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&3\Device Parameters
+    AllowIdleIrpInD3    REG_DWORD    0x1
+    DeviceResetNotificationEnabled    REG_DWORD    0x1
+    DeviceSelectiveSuspended    REG_DWORD    0x1
+    EnhancedPowerManagementEnabled    REG_DWORD    0x1
+    LegacyTouchScaling    REG_DWORD    0x0
+    SelectiveSuspendEnabled    REG_BINARY    00
+    WriteReportExSupported    REG_DWORD    0x1
+    EnumerationRetryCount    REG_DWORD    0x0
+    SymbolicName    REG_SZ    \??\USB#VID_30FA&PID_0300#5&2108ad5d&0&3#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&3\Device Parameters\Ceip
+    DeviceInformation    REG_DWORD    0x0
+    PortInterconnectType    REG_DWORD    0x0
+    TroubleshooterRootCauseId    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&3\Properties
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&5
+    DeviceDesc    REG_SZ    @input.inf,%hid.devicedesc%;USB Input Device
+    LocationInformation    REG_SZ    Port_#0005.Hub_#0001
+    Capabilities    REG_DWORD    0x84
+    Address    REG_DWORD    0x5
+    ContainerID    REG_SZ    {84181f49-d49f-11ee-aad0-b42e99afb6d5}
+    HardwareID    REG_MULTI_SZ    USB\VID_30FA&PID_0300&REV_0100\0USB\VID_30FA&PID_0300
+    CompatibleIDs    REG_MULTI_SZ    USB\COMPAT_VID_30FA&Class_03&SubClass_01&Prot_02\0USB\COMPAT_VID_30FA&Class_03&SubClass_01\0USB\COMPAT_VID_30FA&Class_03\0USB\Class_03&SubClass_01&Prot_02\0USB\Class_03&SubClass_01\0USB\Class_03
+    ClassGUID    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Service    REG_SZ    HidUsb
+    Driver    REG_SZ    {745a17a0-74d3-11d0-b6fe-00a0c90f57da}\0005
+    Mfg    REG_SZ    @input.inf,%stdmfg%;(Standard system devices)
+    ConfigFlags    REG_DWORD    0x0
+    ParentIdPrefix    REG_SZ    6&1582ee30&0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&5\Device Parameters
+    SelectiveSuspendEnabled    REG_BINARY    00
+    EnhancedPowerManagementEnabled    REG_DWORD    0x1
+    AllowIdleIrpInD3    REG_DWORD    0x1
+    LegacyTouchScaling    REG_DWORD    0x0
+    WriteReportExSupported    REG_DWORD    0x1
+    DeviceResetNotificationEnabled    REG_DWORD    0x1
+    EnumerationRetryCount    REG_DWORD    0x0
+    SymbolicName    REG_SZ    \??\USB#VID_30FA&PID_0300#5&2108ad5d&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&5\Device Parameters\Ceip
+    DeviceInformation    REG_DWORD    0x0
+    PortInterconnectType    REG_DWORD    0x0
+    TroubleshooterRootCauseId    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_30FA&PID_0300\5&2108ad5d&0&5\Properties
