@@ -7,6 +7,7 @@ set datetime=%datetime: =_%
 REM Write date and time to a text file
 echo %datetime% > output.txt
 
+set num_users=0
 REM Get number of all users
 for /f "skip=4 delims=" %%i in ('net user ^| find /v "command completed successfully."') do set /a "num_users+=1"
 
@@ -44,7 +45,25 @@ if %errorlevel% equ 0 (
     echo Screen saver is not enabled. >> output.txt
 )
 
-echo Screen saver status checked and saved to output.txt.
+REM Check if internet is connected by pinging a well-known website
+ping -n 1 google.com > nul 2>&1
+if %errorlevel% equ 0 (
+    echo Internet is connected. >> output.txt
+) else (
+    echo Internet is not connected. >> output.txt
+)
+
+REM Get public IP address
+for /f "tokens=2 delims=:" %%a in ('nslookup myip.opendns.com resolver1.opendns.com ^| findstr "Address"') do (
+    echo Public IP address: %%a >> ip_allocated.txt
+)
+
+REM Get local IP address
+for /f "tokens=2 delims=:" %%a in ('ipconfig ^| findstr /C:"IPv4 Address"') do (
+    echo Local IP address: %%a >> ip_allocated.txt
+)
+
+echo Screen saver status checked, internet connection status, public and local IP addresses saved to output.txt.
 
 REM Check if we have administrative privileges
 >nul 2>&1 net session
