@@ -1,11 +1,10 @@
 @echo off
 
-REM Get current date and time
-set datetime=%date% %time%
-set datetime=%datetime: =_%
 
 REM Write date and time to a text file
-echo %datetime% > output.txt
+echo Getting Date and time
+echo Date: %date% > output.txt
+echo Time: %time% >> output.txt
 
 set num_users=0
 REM Get number of all users
@@ -98,8 +97,31 @@ if %errorlevel% equ 0 (
 echo User privileges checked and saved to output.txt.
 
 
+REM Get MAC address
+for /f "tokens=2 delims= " %%m in ('getmac /fo table /nh') do (
+    echo MAC address: %%m >> mac_address_present.txt
+)
 
+REM Check if the guest account is enabled
+net user guest > nul 2>&1
+if %errorlevel% equ 0 (
+    echo Guest account is enabled. >> output.txt
+) else (
+    echo Guest account is not enabled. >> output.txt
+)
 
+REM Check if Remote Desktop is enabled
+reg query "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections > nul 2>&1
+if %errorlevel% equ 0 (
+    reg query "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections | findstr "REG_DWORD.*0x0" > nul 2>&1
+    if %errorlevel% equ 0 (
+        echo Remote Desktop is enabled. >> output.txt
+    ) else (
+        echo Remote Desktop is not enabled. >> output.txt
+    )
+) else (
+    echo Unable to determine Remote Desktop status. >> output.txt
+)
 
 REM Check for installed antivirus software and display its name
 echo Checking for antivirus software...
